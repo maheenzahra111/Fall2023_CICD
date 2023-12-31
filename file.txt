@@ -1,0 +1,20 @@
+name: First Workrlow Using GitHub Actions
+
+run-name: ${C github.actor ]] has triggered this worktlow using $(( github.event name )) on $((github.repository]] repo.
+
+on:
+  - push pull _request
+
+jobs:
+  first-Tob:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Checking out to the repository 
+        uses: actions/checkout@v4
+      - name: Printing the contents of a file 
+        run; cat firstfile.txt
+  second-job:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Echo any text using echo bash command
+        run: echo "Hi class, hope you all had a good mid semester break"
